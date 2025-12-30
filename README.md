@@ -1,6 +1,6 @@
 # Docsify Sidebar Collapse
 
-A Docsify v5 plugin that makes top-level sidebar sections collapsible with accordion behavior.
+A Docsify v5 plugin that makes top-level sidebar sections collapsible with optional accordion behavior.
 
 ## Demo
 https://docs.hibbittsdesign.org
