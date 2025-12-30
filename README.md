@@ -2,6 +2,9 @@
 
 A Docsify plugin that makes top-level sidebar sections collapsible with accordion behavior.
 
+## Demo
+https://docs.hibbittsdesign.org
+
 ## Features
 
 - Accordion behavior - only one section open at a time
