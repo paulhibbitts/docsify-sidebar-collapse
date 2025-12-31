@@ -1,4 +1,4 @@
-# Docsify Sidebar Collapse
+# Docsify Sidebar Expand Collapse
 
 A Docsify v5 plugin that makes top-level sidebar sections collapsible with accordion behavior.
 
@@ -14,11 +14,11 @@ https://docs.hibbittsdesign.org
 
 ## Installation
 
-1. Download `docsify-sidebar-collapse.js`
+1. Download `docsify-sidebar-expand-collapse.js`
 2. Add to your project's `plugins` folder
 3. Include in your index.html (after Docsify):
 ```html
-<script src="./plugins/docsify-sidebar-collapse.js"></script>
+<script src="./plugins/docsify-sidebar-expand-collapse.js"></script>
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ To hide chevron indicators:
 ```html
 
   window.$docsify = {
-    sidebarCollapse: {
+    sidebarExpandCollapse: {
       showChevrons: false
     }
   }
