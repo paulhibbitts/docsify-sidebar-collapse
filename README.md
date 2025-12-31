@@ -1,19 +1,17 @@
 # Docsify Sidebar Expand Collapse
 
-A Docsify v5 plugin that makes top-level sidebar sections collapsible with accordion behavior.
+A Docsify v5 plugin that makes top-level sidebar sections collapsible.
 
 ## Demo
 https://docs.hibbittsdesign.org
 
 ## Features
-
-- Accordion behavior - only one section open at a time
+- Optional accordion behavior - only one section open at a time
 - Chevrons matching Docsify v5 design
 - Fully accessible (keyboard navigation, ARIA support)
 - Auto-expands section with active page
 
 ## Installation
-
 1. Download `docsify-sidebar-expand-collapse.js`
 2. Add to your project's `plugins` folder
 3. Include in your index.html (after Docsify):
@@ -22,37 +20,42 @@ https://docs.hibbittsdesign.org
 ```
 
 ## Usage
-
 No configuration needed! The plugin automatically:
 - Makes all top-level sidebar sections collapsible
 - Expands the section containing the current page
-- Closes other sections when you navigate
+- Closes other sections when you navigate (in accordion mode)
 
 ## Configuration (Optional)
-
-To hide chevron indicators:
 ```html
-
+<script>
   window.$docsify = {
     sidebarExpandCollapse: {
-      showChevrons: false
+      accordion: true,      // Only one section open at a time (default: true)
+      showChevrons: true    // Show chevron indicators (default: true)
     }
   }
-
+</script>
 ```
 
-## Requirements
+### Options
 
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `accordion` | boolean | `true` | Only allow one section to be open at a time |
+| `showChevrons` | boolean | `true` | Display chevron indicators (› when collapsed, ∨ when expanded) |
+
+## Requirements
 - Docsify v5
 
 ## Accessibility
-
 This plugin is fully accessible:
 - Keyboard navigation with Tab, Enter, and Space keys
 - Screen reader support with ARIA attributes
 - Visible focus indicators
 
-## Credits
+## Known Issues
+- **Accordion mode with auto-generated sidebars**: When navigating to pages where Docsify auto-generates sidebar content from page headers, sections may require a second click to remain open. To avoid this behavior, set `accordion: false` in the configuration.
 
+## Credits
 Original concept by [@Wsine](https://github.com/Wsine)  
 Enhanced with assistance from Anthropic Claude AI
