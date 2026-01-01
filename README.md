@@ -31,7 +31,7 @@ No configuration needed! The plugin automatically:
   window.$docsify = {
     sidebarExpandCollapse: {
       accordion: true,      // Only one section open at a time (default: true)
-      showChevronsRight: true    // Show chevron indicators on right (default: true)
+      showChevrons: true    // Show chevron indicators (default: true)
     }
   }
 </script>
@@ -42,7 +42,7 @@ No configuration needed! The plugin automatically:
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `accordion` | boolean | `true` | Only allow one section to be open at a time |
-| `showChevronsRight` | boolean | `true` | Display chevron indicators on right (› when collapsed, ∨ when expanded) |
+| `showChevrons` | boolean | `true` | Display chevron indicators (› when collapsed, ∨ when expanded) |
 
 ## Requirements
 - Docsify v5
